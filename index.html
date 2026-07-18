@@ -3,63 +3,316 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio</title>
+<title>Home | Portfolio</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#FFFDF2,#FFF5CC,#FFE680);
+overflow-x:hidden;
+color:#555;
+
+}
+
+/* ดอกไม้ */
+
+.flower{
+
+position:fixed;
+top:-40px;
+font-size:28px;
+animation:flowerFall linear infinite;
+pointer-events:none;
+
+}
+
+.f1{left:6%;animation-duration:8s;}
+.f2{left:18%;animation-duration:11s;}
+.f3{left:35%;animation-duration:9s;}
+.f4{left:52%;animation-duration:10s;}
+.f5{left:70%;animation-duration:8s;}
+.f6{left:85%;animation-duration:12s;}
+
+@keyframes flowerFall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* จุดสีขาว */
+
+.dot{
+
+position:fixed;
+top:-20px;
+width:8px;
+height:8px;
+background:white;
+border-radius:50%;
+opacity:.8;
+animation:dotFall linear infinite;
+
+}
+
+.d1{left:10%;animation-duration:7s;}
+.d2{left:25%;animation-duration:10s;}
+.d3{left:40%;animation-duration:8s;}
+.d4{left:60%;animation-duration:11s;}
+.d5{left:75%;animation-duration:9s;}
+.d6{left:92%;animation-duration:12s;}
+
+@keyframes dotFall{
+
+0%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(110vh);
+}
+
+}
+
+/* Menu */
+
+nav{
+
+background:white;
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+font-weight:600;
+color:#C28A00;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#F4B400;
+
+}
+
+/* Hero */
+
+.hero{
+
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 30px;
+gap:50px;
+
+}
+
+.text{
+
+flex:1;
+
+}
+
+.text h3{
+
+letter-spacing:4px;
+color:#E6A800;
+margin-bottom:15px;
+
+}
+
+.text h1{
+
+font-size:60px;
+color:#C28A00;
+line-height:70px;
+
+}
+
+.text p{
+
+margin-top:25px;
+font-size:21px;
+line-height:38px;
+
+}
+
+.button{
+
+display:inline-block;
+margin-top:35px;
+padding:16px 40px;
+background:#F4C430;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#D4A017;
+transform:translateY(-5px);
+
+}
+
+.photo{
+
+flex:1;
+text-align:center;
+
+}
+
+.photo img{
+
+width:330px;
+height:330px;
+object-fit:cover;
+border-radius:30px;
+border:8px solid white;
+box-shadow:0 15px 35px rgba(255,193,7,.35);
+
+}
+
+footer{
+
+margin-top:40px;
+padding:25px;
+background:#E6A800;
+text-align:center;
+color:white;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+text-align:center;
+
+}
+
+.photo img{
+
+width:230px;
+height:230px;
+
+}
+
+.text h1{
+
+font-size:42px;
+line-height:50px;
+
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header>
+<span class="flower f1">🌼</span>
+<span class="flower f2">🌼</span>
+<span class="flower f3">🌼</span>
+<span class="flower f4">🌼</span>
+<span class="flower f5">🌼</span>
+<span class="flower f6">🌼</span>
+
+<div class="dot d1"></div>
+<div class="dot d2"></div>
+<div class="dot d3"></div>
+<div class="dot d4"></div>
+<div class="dot d5"></div>
+<div class="dot d6"></div>
 
 <nav>
 
-<a href="index.html">หน้าหลัก</a>
-
-<a href="profile.html">ประวัติส่วนตัว</a>
-
-<a href="education.html">ประวัติการศึกษา</a>
-
-<a href="portfolio.html">ผลงาน</a>
-
-<a href="contact.html">ติดต่อ</a>
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
 
 </nav>
 
-</header>
+<section class="hero">
 
-<div class="container">
+<div class="text">
 
-<div class="card">
+<h3>WELCOME TO MY PORTFOLIO</h3>
 
-<h1>ยินดีต้อนรับ</h1>
+<h1>
 
-<br>
+BANNAPHORN<br>
 
-<h2>Portfolio ของฉัน</h2>
+BURAKET
 
-<br>
+</h1>
 
 <p>
 
-เว็บไซต์นี้จัดทำขึ้นเพื่อแสดงประวัติส่วนตัว ประวัติการศึกษา ผลงาน และช่องทางการติดต่อ
+ยินดีต้อนรับสู่แฟ้มสะสมผลงาน (Portfolio)
+
+ซึ่งรวบรวมข้อมูลส่วนตัว
+ประวัติการศึกษา และข้อมูลต่าง ๆ
+เพื่อใช้ประกอบการศึกษาต่อ
 
 </p>
 
-</div>
+<a href="profile.html" class="button">
+
+Explore Portfolio
+
+</a>
 
 </div>
+
+<div class="photo">
+
+<img src="images/profile.jpg" alt="Profile">
+
+</div>
+
+</section>
 
 <footer>
 
-© 2026 Portfolio Website
+🌼 Thank You For Visiting My Portfolio 🌼
 
 </footer>
 
 </body>
-
 </html>
