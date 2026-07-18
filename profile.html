@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Profile | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#FFFDF2,#FFF8D9,#FFE680);
+overflow-x:hidden;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+top:-50px;
+font-size:26px;
+animation:fall linear infinite;
+pointer-events:none;
+}
+
+.f1{left:8%;animation-duration:9s;}
+.f2{left:22%;animation-duration:11s;}
+.f3{left:40%;animation-duration:8s;}
+.f4{left:58%;animation-duration:10s;}
+.f5{left:78%;animation-duration:12s;}
+.f6{left:92%;animation-duration:9s;}
+
+@keyframes fall{
+0%{transform:translateY(-100px) rotate(0deg);}
+100%{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* จุดสีขาว */
+
+.dot{
+position:fixed;
+top:-20px;
+width:8px;
+height:8px;
+background:white;
+border-radius:50%;
+animation:snow linear infinite;
+opacity:.8;
+}
+
+.d1{left:10%;animation-duration:7s;}
+.d2{left:30%;animation-duration:9s;}
+.d3{left:50%;animation-duration:11s;}
+.d4{left:70%;animation-duration:8s;}
+.d5{left:90%;animation-duration:10s;}
+
+@keyframes snow{
+0%{transform:translateY(-20px);}
+100%{transform:translateY(110vh);}
+}
+
+/* เมนู */
+
+nav{
+background:white;
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+nav a{
+text-decoration:none;
+margin:0 18px;
+color:#C28A00;
+font-weight:600;
+font-size:18px;
+}
+
+nav a:hover{
+color:#F4B400;
+}
+
+.title{
+text-align:center;
+margin:50px 0;
+}
+
+.title h1{
+font-size:48px;
+color:#C28A00;
+}
+
+.line{
+width:120px;
+height:5px;
+background:#F4C430;
+margin:15px auto;
+border-radius:50px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:350px 1fr;
+gap:35px;
+padding:20px;
+}
+
+.left{
+background:white;
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.left img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #FFD54F;
+}
+
+.left h2{
+margin-top:20px;
+color:#C28A00;
+}
+
+.left h3{
+color:#777;
+font-weight:400;
+margin-top:5px;
+}
+
+.right{
+display:grid;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:#C28A00;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:18px;
+line-height:34px;
+color:#555;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:#F4C430;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#D4A017;
+}
+
+footer{
+margin-top:50px;
+background:#E6A800;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<span class="flower f1">🌼</span>
+<span class="flower f2">🌼</span>
+<span class="flower f3">🌼</span>
+<span class="flower f4">🌼</span>
+<span class="flower f5">🌼</span>
+<span class="flower f6">🌼</span>
+
+<div class="dot d1"></div>
+<div class="dot d2"></div>
+<div class="dot d3"></div>
+<div class="dot d4"></div>
+<div class="dot d5"></div>
+
+<nav>
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
+</nav>
+
+<div class="title">
+<h1>👤 My Profile</h1>
+<div class="line"></div>
+</div>
+
+<div class="container">
+
+<div class="left">
+
+<img src="images/profile.jpg">
+
+<h2>Bannaphorn Buraket</h2>
+
+<h3>ปิ่น</h3>
+
+<a href="education.html" class="button">Next Page ➜</a>
+
+</div>
+
+<div class="right">
+
+<div class="card">
+
+<h3>🌼 ข้อมูลส่วนตัว</h3>
+
+<p>
+
+ชื่อ : น.ส.บัณพร บุราเกตุ<br>
+
+ชื่ออังกฤษ : Bannaphorn Buraket<br>
+
+ชื่อเล่น : ปิ่น<br>
+
+อายุ : 17 ปี<br>
+
+วันเกิด : 14 มกราคม 2552
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎯 เป้าหมาย</h3>
+
+<p>
+
+มุ่งมั่นพัฒนาตนเอง
+ทั้งด้านการเรียนและประสบการณ์
+เพื่อเตรียมความพร้อม
+สำหรับการศึกษาต่อ
+และการทำงานในอนาคต
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💛 คติประจำใจ</h3>
+
+<p>
+
+Success begins with believing in yourself.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+🌼 Keep Growing Every Day 🌼
+
+</footer>
+
+</body>
+</html>
