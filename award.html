@@ -1,1 +1,316 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Awards | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#FFFDF2,#FFF6D5,#FFE68A);
+overflow-x:hidden;
+}
+
+/* ดอกไม้ */
+
+.flower{
+position:fixed;
+top:-40px;
+font-size:28px;
+pointer-events:none;
+animation:flower 10s linear infinite;
+}
+
+.f1{left:5%;animation-duration:8s;}
+.f2{left:18%;animation-duration:11s;}
+.f3{left:35%;animation-duration:9s;}
+.f4{left:50%;animation-duration:12s;}
+.f5{left:65%;animation-duration:8s;}
+.f6{left:80%;animation-duration:10s;}
+.f7{left:95%;animation-duration:9s;}
+
+@keyframes flower{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* จุดสีขาว */
+
+.dot{
+position:fixed;
+top:-20px;
+width:8px;
+height:8px;
+background:white;
+border-radius:50%;
+opacity:.8;
+animation:snow linear infinite;
+}
+
+.d1{left:10%;animation-duration:8s;}
+.d2{left:25%;animation-duration:10s;}
+.d3{left:40%;animation-duration:7s;}
+.d4{left:60%;animation-duration:11s;}
+.d5{left:80%;animation-duration:9s;}
+.d6{left:95%;animation-duration:12s;}
+
+@keyframes snow{
+
+0%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(110vh);
+}
+
+}
+
+/* Menu */
+
+nav{
+background:white;
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+nav a{
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+font-weight:600;
+color:#C49000;
+transition:.3s;
+}
+
+nav a:hover{
+color:#F0B400;
+}
+
+/* Title */
+
+.title{
+text-align:center;
+margin:60px 20px;
+}
+
+.title h1{
+font-size:50px;
+color:#C49000;
+}
+
+.title p{
+margin-top:15px;
+font-size:20px;
+color:#666;
+}
+
+.line{
+width:120px;
+height:5px;
+background:#F4C430;
+margin:20px auto;
+border-radius:30px;
+}
+
+/* Card */
+
+.card{
+
+max-width:900px;
+margin:auto;
+background:white;
+padding:45px;
+border-radius:30px;
+box-shadow:0 15px 35px rgba(0,0,0,.10);
+text-align:center;
+
+}
+
+.icon{
+
+font-size:70px;
+margin-bottom:20px;
+
+}
+
+.card h2{
+
+color:#D49A00;
+margin-bottom:20px;
+font-size:34px;
+
+}
+
+.card p{
+
+font-size:20px;
+line-height:38px;
+color:#666;
+
+}
+
+.quote{
+
+margin-top:30px;
+font-size:24px;
+font-style:italic;
+color:#B8860B;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+max-width:900px;
+margin:45px auto;
+display:flex;
+gap:20px;
+
+}
+
+.btn{
+
+flex:1;
+padding:18px;
+text-align:center;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:50px;
+background:#F4C430;
+color:white;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#D49A00;
+
+}
+
+footer{
+
+margin-top:50px;
+background:#E0A800;
+padding:25px;
+text-align:center;
+color:white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<span class="flower f1">🌼</span>
+<span class="flower f2">🌻</span>
+<span class="flower f3">🌼</span>
+<span class="flower f4">🌻</span>
+<span class="flower f5">🌼</span>
+<span class="flower f6">🌻</span>
+<span class="flower f7">🌼</span>
+
+<div class="dot d1"></div>
+<div class="dot d2"></div>
+<div class="dot d3"></div>
+<div class="dot d4"></div>
+<div class="dot d5"></div>
+<div class="dot d6"></div>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="title">
+
+<h1>🏆 Awards & Achievements</h1>
+
+<p>ประสบการณ์และความภาคภูมิใจในการพัฒนาตนเอง</p>
+
+<div class="line"></div>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🌻</div>
+
+<h2>My Achievement Journey</h2>
+
+<p>
+
+ปัจจุบันกำลังสะสมประสบการณ์
+และพัฒนาทักษะในด้านต่าง ๆ
+
+<br><br>
+
+มุ่งมั่นเรียนรู้จากทุกโอกาส
+เพื่อเพิ่มพูนความรู้ ความสามารถ
+และเตรียมความพร้อมสำหรับการศึกษาต่อ
+รวมถึงการประกอบอาชีพในอนาคต
+
+</p>
+
+<div class="quote">
+
+"Every flower blooms in its own time."
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a href="education.html" class="btn">
+
+⬅ Education
+
+</a>
+
+<a href="contact.html" class="btn">
+
+Contact ➜
+
+</a>
+
+</div>
+
+<footer>
+
+🌼 Thank You For Visiting My Portfolio 🌼
+
+</footer>
+
+</body>
+</html>
